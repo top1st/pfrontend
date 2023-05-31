@@ -11,6 +11,7 @@ import { configureChains, createConfig, WagmiConfig } from 'wagmi';
 import { pulsechain } from 'wagmi/chains';
 import { alchemyProvider } from 'wagmi/providers/alchemy';
 import { publicProvider } from 'wagmi/providers/public';
+import Home from './pages/home';
 
 const { chains, publicClient } = configureChains(
   [pulsechain],
@@ -35,7 +36,7 @@ function App() {
   return (
     <WagmiConfig config={wagmiConfig}>
       <RainbowKitProvider chains={chains}>
-        <ConnectButton />
+        <Home />
       </RainbowKitProvider>
     </WagmiConfig>
   );
