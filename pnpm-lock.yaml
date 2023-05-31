@@ -85,6 +85,9 @@ devDependencies:
   stream-http:
     specifier: ^3.2.0
     version: 3.2.0
+  tailwindcss:
+    specifier: ^3.3.2
+    version: 3.3.2
   url:
     specifier: ^0.11.0
     version: 0.11.0
